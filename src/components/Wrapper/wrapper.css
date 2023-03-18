@@ -1,0 +1,27 @@
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.wrapper-container {
+    width: 60%;
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+
+    /* background-color: white; */
+}
+
+
+@media only screen and (max-width: 600px) {
+    .wrapper-container {
+        width: 90%;
+    }
+  }
+  
