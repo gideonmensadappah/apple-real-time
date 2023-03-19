@@ -509,7 +509,8 @@ const data = [
 ];
 const options = {
   rangeSelector: {
-    selected: 1,
+    // selected: 1,
+    enabled: false,
   },
   series: [
     {
@@ -522,6 +523,9 @@ const options = {
       },
     } as SeriesOptionsType,
   ],
+  navigator: {
+    enabled: false, // to remove the bottom navigator
+  },
 };
 
 const MyChart = () => {
