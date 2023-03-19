@@ -40,9 +40,7 @@ const Header = () => {
       const json = JSON.parse(event.data);
       try {
         if ((json.event = "data")) {
-          console.log(latestInfo);
           if (!latestInfo) {
-            console.log(json);
             setLatestInfo((prev) => json["s-aapl"]);
           }
         }
